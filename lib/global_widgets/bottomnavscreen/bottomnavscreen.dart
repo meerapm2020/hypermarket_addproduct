@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:hypermarket_addproduct/presentation/home_screen/view/home_screen.dart';
 import 'package:hypermarket_addproduct/presentation/product_list_screen/view/product_list_screen.dart';
 import 'package:hypermarket_addproduct/presentation/userpurchase_screen/view/userpurchase_screen.dart';
@@ -35,10 +34,8 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
           },
           items: [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.shopping_cart), label: "Cart"),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.description), label: "Schemes")
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: "Users"),
+            BottomNavigationBarItem(icon: Icon(Icons.description), label: "Stocks")
           ],
         ),
       ),

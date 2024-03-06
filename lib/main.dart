@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hypermarket_addproduct/core/login_screen.dart';
-
 //import 'package:hypermarket_addproduct/core/login_screen.dart';
 import 'package:hypermarket_addproduct/presentation/controller/product_controller.dart';
 //import 'package:hypermarket_addproduct/presentation/userpurchase_screen/view/userpurchase_screen.dart';
