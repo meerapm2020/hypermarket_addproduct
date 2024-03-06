@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:hypermarket_addproduct/presentation/home_screen/view/home_screen.dart';
-import 'package:hypermarket_addproduct/presentation/product_list_screen/view/product_list_screen.dart';
+import 'package:hypermarket_addproduct/presentation/outofstock_screen/view/outofstock_screen.dart';
+
 import 'package:hypermarket_addproduct/presentation/userpurchase_screen/view/userpurchase_screen.dart';
 
 class BottomNavScreen extends StatefulWidget {
@@ -16,7 +17,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
   List<Widget> myWidgetList = [
     HomeScreen(),
     UserPurchaseScreen(),
-    ProductsListScreen()
+    OutofStockScreen()
   ];
 
   @override
