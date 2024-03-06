@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hypermarket_addproduct/presentation/view/product_screen/product_screen.dart';
-
+import 'package:hypermarket_addproduct/global_widgets/BottomNavScreen/BottomNavScreen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -142,7 +141,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => ProductScreen()));
+                                    builder: (context) => BottomNavScreen()));
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.orange,

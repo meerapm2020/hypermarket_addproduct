@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hypermarket_addproduct/model/productscreen_model.dart';
 import 'package:hypermarket_addproduct/presentation/controller/product_controller.dart';
+import 'package:hypermarket_addproduct/presentation/product_description_screen/view/product_description_screen.dart';
 
 import 'package:provider/provider.dart';
 
@@ -51,14 +52,23 @@ class _ProductScreenState extends State<ProductScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Container(
-                        height: 150,
-                        width: 200,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                              image: AssetImage("assets/images/applenew.jpg"),
-                              fit: BoxFit.cover),
-                          borderRadius: BorderRadius.circular(10),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      ProductDescriptionScreen()));
+                        },
+                        child: Container(
+                          height: 150,
+                          width: 200,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage("assets/images/applenew.jpg"),
+                                fit: BoxFit.cover),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
                         ),
                       ),
                       Text(
